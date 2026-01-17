@@ -6,3 +6,10 @@ test('Google_title_test',async({page})=> {
     const title : string = await page.title();
     console.log('Title : ',title);
 });
+
+test('Google_url_test',async({page})=> {
+
+    await page.goto('https://www.google.com/');
+    const url : string = await page.url();
+    console.log('url : ',url);
+});
