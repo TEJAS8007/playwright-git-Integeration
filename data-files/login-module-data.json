@@ -1,0 +1,10 @@
+{
+    "title" : "Swag Labs",
+    "incorrect-username" : "stnadard_users",
+    "incorrect-password" : "secret_sauces",
+    "correct-usernames" : "standard_user",
+    "correct-password" : "secret_sauce",
+
+    "error_msg" : "Username and password do not match any user in this service",
+    "error_msg2" : "Username is required"
+}
