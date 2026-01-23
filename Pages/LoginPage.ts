@@ -16,6 +16,7 @@ export class LoginPage {
         this.loginButton = page.locator('[data-test="login-button"]');
         this.eror_msg = page.locator('//h3[@data-test]');
     }
+    
     /**
      * opening Sauce Demo Application
      */
@@ -33,7 +34,6 @@ export class LoginPage {
     }
 
     /**
-     * 
      * @param username 
      * @param password 
      * performin Login into Sauce Demo Application
