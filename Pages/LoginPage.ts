@@ -25,9 +25,8 @@ export class LoginPage {
     }
  
     /**
-     * 
+     * verifying title of Login page
      * @param title 
-     * verifyig title of sauce Demo Application
      */
     async verify_title(title:string) {
        await expect(this.page).toHaveTitle(title);
@@ -43,7 +42,6 @@ export class LoginPage {
        await this.passwordBox.fill(password);
        await this.loginButton.click();
 
-       await this.page.waitForTimeout(3000);
     }
 
 }

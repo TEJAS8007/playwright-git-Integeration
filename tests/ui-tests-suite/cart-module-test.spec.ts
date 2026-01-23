@@ -1,4 +1,4 @@
-import {test} from '../fixtures/hooks.fixture';
+import {test} from '../../fixtures/hooks.fixture';
 
 test('Adding product to cart',{
     tag: ['@UI','@SANITY'],

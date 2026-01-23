@@ -1,4 +1,4 @@
-import {test} from '../fixtures/hooks.fixture';
+import {test} from '../../fixtures/hooks.fixture';
 
 
 test('verifying product Name',{
