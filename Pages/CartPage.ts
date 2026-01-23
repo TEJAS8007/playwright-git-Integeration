@@ -10,6 +10,9 @@ export class CartPage {
     readonly productInfo : Locator;
     readonly productPrice : Locator;
     readonly continueShopping : Locator;
+    readonly checkoutButton : Locator;
+
+    readonly second_product : Locator;
 
     constructor(page:Page) {
         this.page=page;
@@ -21,6 +24,9 @@ export class CartPage {
         this.productInfo = page.locator("[data-test='inventory-item-desc']");
         this.productPrice = page.locator("[data-test='inventory-item-price']");
         this.continueShopping = page.locator("[data-test='continue-shopping']");
+        this.checkoutButton = page.locator("[data-test='checkout']");
+
+        this.second_product = page.locator("//button[@id='add-to-cart-sauce-labs-bike-light']");
     }
 
     /**
@@ -50,5 +56,17 @@ export class CartPage {
 
         await expect(this.continueShopping).toBeEnabled();
         await this.continueShopping.click();
+    }
+
+    async click_on_second_product() {
+        await expect(this.second_product).toBeVisible();
+        await this.second_product.click();
+
+        await expect(this.cartButton).toBeVisible();
+        await this.cartButton.click();
+    }
+
+    async clickOnCheckoutButton() {
+        await this.checkoutButton.click();
     }
 }

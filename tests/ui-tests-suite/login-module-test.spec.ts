@@ -1,5 +1,5 @@
-import {test} from '../fixtures/hooks.fixture';
-import loginData from '../data-files/login-module-data.json';
+import {test} from '../../fixtures/hooks.fixture';
+import loginData from '../../data-files/login-module-data.json';
 import { expect } from 'playwright/test';
 
 
