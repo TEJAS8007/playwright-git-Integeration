@@ -16,3 +16,5 @@ export const test = baseTest.extend<hooksfixturetype> ({
         use();
     }
 })
+
+export {expect} from '@playwright/test';

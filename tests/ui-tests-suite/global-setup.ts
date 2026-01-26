@@ -1,5 +1,4 @@
-import { expect } from 'playwright/test';
-import {test} from '../../fixtures/hooks.fixture';
+import {test,expect} from '../../fixtures/hooks.fixture';
 
 test('Global setup for Auto Login',async({loginPage,page})=> {
 

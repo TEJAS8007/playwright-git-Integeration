@@ -37,6 +37,11 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    baseURL : process.env.API_BASE_URL,
+    extraHTTPHeaders : {
+      'Content-Type' : 'application/json',
+      Accept : 'application/json'
+    },
     trace: 'on-first-retry',
     screenshot : 'only-on-failure',
     video : 'retain-on-failure'
@@ -44,6 +49,10 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    {
+      name : 'api_test',
+      testDir : './tests/api-test-suite'
+    },
     {
       name : 'GLOBAL_SETUP',
       testMatch:'global-setup.ts'
