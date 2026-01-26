@@ -8,7 +8,8 @@
     "test_demo_cr": "npx playwright test --project=chromium",
     "test_demo_cr_hd": "npx playwright test --project=chromium --headed",
     "test_demo_cr_pr" : "npx playwright test tests/product-module-test.spec.ts --project=chromium --headed",
-    "test_demo_cr_ui": "npx playwright test --ui"
+    "test_demo_cr_ui": "npx playwright test --ui",
+    "test_demo_api" : "npx playwright test --project=api_test"
   },
   "keywords": [],
   "author": "",

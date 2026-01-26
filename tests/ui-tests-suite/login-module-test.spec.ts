@@ -1,6 +1,5 @@
-import {test} from '../../fixtures/hooks.fixture';
-import loginData from '../../data-files/login-module-data.json';
-import { expect } from 'playwright/test';
+import {test,expect} from '../../fixtures/hooks.fixture';
+import loginData from '../../data-files/ui-data/login-module-data.json';
 
 
 test('Login with valid credentials',{
